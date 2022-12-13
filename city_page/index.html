@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../main_style.css">
+        <title>Просмотр города</title>
+    </head>
+
+    <body>
+        <nav>
+            <div class="site-name-with-image">
+                <img src="../sources/images/logo.png" alt="no" class="site-img" style="border-radius: 50%;">
+                <h2>TWF</h2>
+            </div>
+
+            <div class="select-page">
+                <a href="">Личный кабинет</a>
+                /
+                <a href="">Меню</a>
+            </div>
+
+            <div class="select-page-menu" style="display: none;">
+                <button id="open-select-page" value="closed">
+                    <img src="https://img.icons8.com/ios-filled/25/null/menu-rounded.png" />
+                </button>
+
+                <div id="select-page-menu-actions" style="display: none;">
+                    <button id="close-menu-btn">
+                        <img src="https://img.icons8.com/fluency-systems-regular/15/null/cancel.png" align="right" />
+                    </button>
+                    <p><a href="">Личный кабинет</a></p>
+                    <p><a href="">Меню</a></p>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <form class="select-city-form">
+                <!-- <select class="region-selector">
+                    <option value="reg1">Санкт-Петербург и область</option>
+                    <option value="reg2">Регион 2</option>
+                    <option value="reg3">Регион 3</option>
+                    <option value="reg4">Регион 4</option>
+                    <option value="reg5">Регион 5</option>
+                </select> -->
+
+                <!-- <select class="city-selector">
+                    <option value="city1">Санкт-Петербург</option>
+                    <option value="city2">Город 2</option>
+                    <option value="city3">Город 3</option>
+                    <option value="city4">Город 4</option>
+                    <option value="city5">Город 5</option>
+                </select> -->
+
+                <input class="city-selector" type="text" placeholder="Выбор города" list="city-datalist">
+
+                <datalist id="city-datalist">
+                    <option value="city1">Санкт-Петербург</option>
+                    <option value="city2">Город 2</option>
+                    <option value="city3">Город 3</option>
+                    <option value="city4">Город 4</option>
+                    <option value="city5">Город 5</option>
+                </datalist>
+
+                <button type="submit">Найти</button>
+            </form>
+
+            <div class="content">
+                <div class="all-top-places">
+                    <div class="top-category">
+                        <div class="top-places">
+                            <header class="div-top-places-header">
+                                <h1 class="top-header">Топ 3</h1>
+                                <p class="top-desc">Мест для прогулок</p>
+                            </header>
+
+                            <div class="top-images">
+                                <a href="">
+                                    <img src="../sources/images/place_image.png" alt="place">
+                                </a>
+
+                                <a href="">
+                                    <img src="../sources/images/place_image.png" alt="place">
+                                </a>
+
+                                <a href="">
+                                    <img src="../sources/images/place_image.png" alt="place">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="category-decore-arrows">
+                            <img src="../sources/images/white_arrow.svg">
+                            <img src="../sources/images/blue_arrow.svg">
+                            <img src="../sources/images/white_arrow.svg">
+                        </div>
+
+                        <a href="" class="view-all-places-link">смотреть все места</a>
+                    </div>
+
+                    <div class="top-category">
+                        <div class="top-places">
+                            <header class="div-top-places-header">
+                                <h1 class="top-header">Топ 3</h1>
+                                <p class="top-desc">Мест для прогулок</p>
+                            </header>
+
+                            <div class="top-images">
+                                <a href="">
+                                    <img src="../sources/images/place_image.png" alt="place">
+                                </a>
+
+                                <a href="">
+                                    <img src="../sources/images/place_image.png" alt="place">
+                                </a>
+
+                                <a href="">
+                                    <img src="../sources/images/place_image.png" alt="place">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="category-decore-arrows">
+                            <img src="../sources/images/white_arrow.svg">
+                            <img src="../sources/images/blue_arrow.svg">
+                            <img src="../sources/images/white_arrow.svg">
+                        </div>
+
+                        <a href="" class="view-all-places-link">смотреть все места</a>
+                    </div>
+
+                </div>
+
+                <div class="category-select-p-div">
+                    <p style="margin: 30px 20px;">Выбирай места, которые тебе понравятся!</p>
+                    <img src="../sources/images/arrow_down.svg">
+                </div>
+
+                <div class="categories">
+                    <a href="">
+                        <p>Парки и скверы</p>
+                        <svg viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="97" cy="55" r="3" fill="#001AFF" />
+                        </svg>
+                    </a>
+                    <a href="">
+                        <p>Музеи и дворцы</p>
+                        <svg viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="97" cy="55" r="3" fill="#001AFF" />
+                        </svg>
+                    </a>
+                    <a href="">
+                        <p>Театры</p>
+                        <svg viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="97" cy="55" r="3" fill="#001AFF" />
+                        </svg>
+                    </a>
+                    <a href="">
+                        <p>Развлечения</p>
+                        <svg viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="97" cy="55" r="3" fill="#001AFF" />
+                        </svg>
+                    </a>
+                    <a href="">
+                        <p>Кафе и рестораны</p>
+                        <svg viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="97" cy="55" r="3" fill="#001AFF" />
+                        </svg>
+                    </a>
+                    <a href="">
+                        <p>Площадки</p>
+                        <svg viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="97" cy="55" r="3" fill="#001AFF" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="routes-decore-arrows">
+                    <img src="../sources/images/blue_arrow.svg" style="transform: rotate(90deg)">
+                    <img src="../sources/images/white_arrow.svg" style="transform: rotate(90deg)">
+                </div>
+
+                <p style="font-size: 30px; margin-bottom: 50px;">Маршруты</p>
+
+                <div class="routes-cards">
+                    <div class="route">
+                        <p>Архитектура</p>
+                        <img src="../sources/images/arch_icon.svg">
+                    </div>
+
+                    <div class="route">
+                        <p>Исторические места</p>
+                        <img src="../sources/images/hist_icon.svg">
+                    </div>
+
+                    <div class="route">
+                        <p>Популярные маршруты</p>
+                        <img src="../sources/images/popular_routes_icon.svg">
+                    </div>
+
+                    <div class="route">
+                        <p>Современные площадки</p>
+                        <img src="../sources/images/place_icon.svg">
+                    </div>
+
+                    <div class="route">
+                        <p>Здоровые маршруты</p>
+                        <img src="../sources/images/health_icon.svg">
+                    </div>
+
+                    <div class="route">
+                        <p>Романтические места</p>
+                        <img src="../sources/images/romantic_icon.svg">
+                    </div>
+                </div>
+
+                <div class="feedbacks">
+                    <div class="feedbacks-header">
+                        <img src="../sources/images/Group 1.svg" alt="" class="decore-questions">
+
+                        <div class="feedbacks-header-text-block">
+                            <p class="feedbacks-header-text">
+                                До сих пор сомневаешься?
+                            </p>
+                            <p class="feedbacks-header-text">
+                                - Смотри отзывы и общайся с людьми!
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feedbacks-preview">
+                        <div class="feedback">
+                            <img src="https://fb.ru/misc/i/gallery/66975/2606156.jpg" alt="" class="feedback-user-icon">
+
+                            <div class="feedback-body">
+                                <div class="feedback-text">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid dolorem eos
+                                        eaque
+                                        quo
+                                        voluptate ratione assumenda repellendus cumque ipsam obcaecati maxime saepe
+                                        laudantium
+                                        quis doloremque officiis, quisquam doloribus vero expedita.</p>
+                                </div>
+                                <div class="hashtags">
+                                    <a href="">#hashtag1</a>
+                                    <a href="">#hashtag2</a>
+                                    <a href="">#hashtag3</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="feedback">
+                            <img src="https://fb.ru/misc/i/gallery/66975/2606156.jpg" alt="" class="feedback-user-icon">
+
+                            <div class="feedback-body">
+                                <div class="feedback-text">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid dolorem eos
+                                        eaque
+                                        quo
+                                        voluptate ratione assumenda repellendus cumque ipsam obcaecati maxime saepe
+                                        laudantium
+                                        quis doloremque officiis, quisquam doloribus vero expedita.</p>
+                                </div>
+                                <div class="hashtags">
+                                    <a href="">#hashtag1</a>
+                                    <a href="">#hashtag2</a>
+                                    <a href="">#hashtag3</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="feedback">
+                            <img src="https://fb.ru/misc/i/gallery/66975/2606156.jpg" alt="" class="feedback-user-icon">
+
+                            <div class="feedback-body">
+                                <div class="feedback-text">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid dolorem eos
+                                        eaque
+                                        quo
+                                        voluptate ratione assumenda repellendus cumque ipsam obcaecati maxime saepe
+                                        laudantium
+                                        quis doloremque officiis, quisquam doloribus vero expedita.</p>
+                                </div>
+                                <div class="hashtags">
+                                    <a href="">#hashtag1</a>
+                                    <a href="">#hashtag2</a>
+                                    <a href="">#hashtag3</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p style="margin-bottom: -15px;">ещё больше отзывов</p>
+                    <p>. . .</p>
+                </div>
+
+            </div>
+        </div>
+
+        <footer style="margin-top: 40px;">
+            <div class="contacts">
+                <div class="contact">
+                    <img src="../sources/images/vk.png">
+                    <span>Группа ВК</span>
+                </div>
+                <!-- created by Freepik - Flaticon -->
+
+                <div class="contact">
+                    <img src="../sources/images/mail.png" alt="" class="contact-img">
+                    <span>Электронная почта</span>
+                </div>
+                <!-- created by Pixel perfect - Flaticon -->
+
+                <div class="contact">
+                    <img src="../sources/images/telegram.png" alt="" class="contact-img">
+                    <span>Телеграм</span>
+                </div>
+                <!-- created by Pixel perfect - Flaticon-->
+
+                <div class="contact">
+                    <img src="../sources/images/call.png" alt="" class="contact-img">
+                    <span>Позонить нам</span>
+                </div>
+                <!-- created by Uniconlabs - Flaticon -->
+            </div>
+
+            <div class="company-data">
+                <img src="../sources/images/logo.png" alt="" class="company-img">
+                <p class="company-address">Россия, Республика Марий Эл, Йошкар-Ола</p>
+                <p class="company-reg-data">22.11.2022</p>
+            </div>
+        </footer>
+
+        <script src="../sources/js/script.js"></script>
+    </body>
+
+</html>
