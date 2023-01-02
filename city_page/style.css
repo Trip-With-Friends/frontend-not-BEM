@@ -2,228 +2,6 @@ h1 {
     font-family: 'Inter-Black';
 }
 
-@media (max-width: 900px) {
-
-    .categories,
-    .routes-cards {
-        grid-template-columns: 1fr 1fr !important;
-    }
-
-    .categories>a:nth-last-child(2n-1) {
-        justify-self: left;
-    }
-
-    .categories>a:nth-last-child(2n-2) {
-        justify-self: right;
-    }
-
-    .categories>a {
-        left: 0 !important;
-    }
-
-    .routes-cards>.route:nth-last-child(2n-2) {
-        justify-self: right;
-    }
-
-    .route:nth-last-child(2n-1) {
-        justify-self: left;
-    }
-
-    .categories>a>svg {
-        display: none;
-    }
-}
-
-@media (max-width: 767px) {
-    .top-places {
-        border-top-left-radius: 50px !important;
-        border-bottom-left-radius: 50px !important;
-        border-left: 1px solid #001AFF !important;
-        min-width: 50px;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    .top-category {
-        margin-bottom: 20px !important;
-    }
-
-    .category-decore-arrows {
-        display: none;
-    }
-
-    .view-all-places-link {
-        top: -10px !important;
-    }
-
-    .top-images>a>* {
-        width: 100px !important;
-        height: 100px !important;
-    }
-
-    .decore-questions {
-        display: none;
-    }
-
-    .feedbacks-header-text-block {
-        margin-top: 200px !important;
-        margin-bottom: 20px !important;
-        max-width: 90% !important;
-    }
-}
-
-@media (max-width: 600px) {
-    .top-images>a>* {
-        width: 100px !important;
-        height: 100px !important;
-    }
-
-    .top-category {
-        margin-right: 10px !important;
-        margin-left: 10px !important;
-    }
-
-    .decore-questions {
-        display: none;
-    }
-
-    .feedback {
-        width: 98%;
-        margin: 0 !important;
-        margin-bottom: 50px !important;
-    }
-
-    .feedbacks-preview {
-        margin: 0 50px;
-    }
-}
-
-@media (max-width: 590px) {
-    .categories>a {
-        max-width: 140px;
-        max-height: 130px;
-        border-radius: 50px !important;
-        padding: 5px;
-        margin: 0;
-    }
-
-    .top-places {
-        position: relative;
-        flex-direction: column;
-        align-self: center;
-        width: 90%;
-    }
-
-    .top-header {
-        text-align: center;
-    }
-
-    .div-top-places-header {
-        margin: 0px !important;
-    }
-
-    .top-images {
-        align-self: center !important;
-        width: 100%;
-    }
-
-    .top-images>a>* {
-        max-width: 100% !important;
-    }
-
-    .category-decore-arrows {
-        display: none;
-    }
-
-    .view-all-places-link {
-        top: -10px !important;
-    }
-
-    .select-city-form {
-        display: flex !important;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .select-city-form>* {
-        width: 95%;
-        margin-bottom: 5px;
-    }
-
-    .city-selector {
-        max-width: 95% !important;
-        width: 95% !important;
-        margin-left: 10px !important;
-        margin-right: 10px !important;
-        align-self: center;
-    }
-}
-
-@media (max-width: 570px) {
-    .routes-cards {
-        row-gap: 0px !important;
-    }
-
-    .routes-cards>*>img {
-        width: 100px;
-        height: 100px;
-    }
-
-    .routes-cards>* {
-        width: 100px;
-        height: 100px;
-        padding-bottom: 100px;
-        margin-top: -7px;
-    }
-
-    .routes-cards>*>p {
-        max-width: 130px;
-        min-height: 50px !important;
-        margin-bottom: 0;
-    }
-
-    .routes-cards>*>img {
-        height: 90px !important;
-        width: 90px !important;
-    }
-}
-
-@media (max-width: 390px) {
-    .categories {
-        gap: 10px !important;
-    }
-
-    .routes-cards {
-        column-gap: 55px !important;
-    }
-
-    .categories>a {
-        width: 100px !important;
-        height: 100px !important;
-        border-radius: 40px !important;
-    }
-}
-
-@media (max-width: 370px) {
-    .top-images>a>* {
-        width: 90px;
-        height: 90px;
-    }
-
-    .top-places {
-        margin-left: 10px !important;
-        margin-right: 10px !important;
-    }
-
-    .select-page {
-        display: none;
-    }
-
-    .select-page-menu {
-        display: block !important;
-    }
-}
-
 /* select city form */
 .select-city-form {
     display: inline-block;
@@ -264,28 +42,44 @@ h1 {
     margin-bottom: -40px;
 }
 
-.top-places {
+.left-top-places,
+.right-top-places {
     display: inline-flex;
     align-items: center;
-
     position: relative;
-
     border: 1px solid #001AFF;
+    width: 92%;
+    padding: 15px;
+}
 
+.right-top-places {
+    align-self: flex-end;
+    border-radius: 50px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-right: none;
+}
+
+.right-top-places>.categor .right-top-places>.div-top-places-header {
+    /* text-align: right; */
+}
+
+.left-top-places {
     border-radius: 50px;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
     border-left: none;
-
-    width: 92%;
-
-    padding: 15px;
 }
 
-.div-top-places-header {
+.left-top-places>.div-top-places-header {
     text-align: left;
     margin-left: 60px;
     margin-right: 15px;
+}
+
+.right-top-places>.div-top-places-header {
+    text-align: left;
+    margin-left: 120px;
 }
 
 .top-header {
@@ -321,30 +115,45 @@ h1 {
 .top-category {
     display: flex;
     flex-direction: column;
-    /* min-height: 160px; */
 }
 
-.view-all-places-link {
+.left-view-all-places-link,
+.right-view-all-places-link {
     position: relative;
-    text-align: left;
-
-    margin-left: 25px;
-    /* margin-top: 163px; */
     margin-top: 10px;
-    color: black;
-    font-style: oblique;
     top: -92px;
-    /* margin-bottom: 10px; */
+    font-style: oblique;
+    color: black;
 }
 
-.category-decore-arrows {
+.left-view-all-places-link {
+    text-align: left;
+    margin-left: 25px;
+}
+
+.right-view-all-places-link {
+    text-align: right;
+    margin-right: 25px;
+}
+
+.left-category-decore-arrows,
+.right-category-decore-arrows {
     position: relative;
-    align-self: flex-end;
-    margin-right: -40px;
     bottom: 120px;
 }
 
-.category-decore-arrows>* {
+.left-category-decore-arrows {
+    align-self: flex-end;
+    margin-right: -40px;
+}
+
+.right-category-decore-arrows {
+    align-self: flex-start;
+    margin-left: -20px;
+}
+
+.left-category-decore-arrows>*,
+.right-category-decore-arrows>* {
     width: 50px;
     height: 84px;
     margin-right: 10px;
@@ -524,4 +333,224 @@ h1 {
 .hashtags>* {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.61);
+}
+
+
+@media (max-width: 900px) {
+
+    .categories,
+    .routes-cards {
+        grid-template-columns: 1fr 1fr !important;
+    }
+
+    .categories>a:nth-last-child(2n-1) {
+        justify-self: left;
+    }
+
+    .categories>a:nth-last-child(2n-2) {
+        justify-self: right;
+    }
+
+    .categories>a {
+        left: 0 !important;
+    }
+
+    .routes-cards>.route:nth-last-child(2n-2) {
+        justify-self: right;
+    }
+
+    .route:nth-last-child(2n-1) {
+        justify-self: left;
+    }
+
+    .categories>a>svg {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .right-top-places,
+    .left-top-places {
+        border: 1px solid #001AFF !important;
+        border-radius: 50px;
+        min-width: 50px;
+        margin-left: 10px;
+        margin-right: 10px;
+        align-self: center;
+    }
+
+    .top-category {
+        margin-bottom: 20px !important;
+    }
+
+    .left-category-decore-arrows,
+    .right-category-decore-arrows {
+        display: none;
+    }
+
+    .right-view-all-places-link,
+    .left-view-all-places-link {
+        top: -10px !important;
+        align-self: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .top-images>a>* {
+        width: 100px !important;
+        height: 100px !important;
+    }
+
+    .decore-questions {
+        display: none;
+    }
+
+    .feedbacks-header-text-block {
+        margin-top: 200px !important;
+        margin-bottom: 20px !important;
+        max-width: 90% !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .top-images>a>* {
+        width: 100px !important;
+        height: 100px !important;
+    }
+
+    .top-category {
+        margin-right: 10px !important;
+        margin-left: 10px !important;
+    }
+
+    .decore-questions {
+        display: none;
+    }
+
+    .feedback {
+        width: 98%;
+        margin: 0 !important;
+        margin-bottom: 50px !important;
+    }
+
+    .feedbacks-preview {
+        margin: 0 50px;
+    }
+}
+
+@media (max-width: 590px) {
+    .categories>a {
+        max-width: 140px;
+        max-height: 130px;
+        border-radius: 50px !important;
+        padding: 5px;
+        margin: 0;
+    }
+
+    .left-top-places,
+    .right-top-places {
+        flex-direction: column;
+    }
+
+    .top-header {
+        text-align: center;
+    }
+
+    .div-top-places-header {
+        margin: 0px !important;
+    }
+
+    .top-images {
+        align-self: center !important;
+        width: 100%;
+    }
+
+    .top-images>a>* {
+        max-width: 100% !important;
+    }
+
+    .select-city-form {
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .select-city-form>* {
+        width: 95%;
+        margin-bottom: 5px;
+    }
+
+    .city-selector {
+        max-width: 95% !important;
+        width: 95% !important;
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+        align-self: center;
+    }
+}
+
+@media (max-width: 570px) {
+    .routes-cards {
+        row-gap: 0px !important;
+    }
+
+    .routes-cards>*>img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .routes-cards>* {
+        width: 100px;
+        height: 100px;
+        padding-bottom: 100px;
+        margin-top: -7px;
+    }
+
+    .routes-cards>*>p {
+        max-width: 130px;
+        min-height: 50px !important;
+        margin-bottom: 0;
+    }
+
+    .routes-cards>*>img {
+        height: 90px !important;
+        width: 90px !important;
+    }
+}
+
+@media (max-width: 390px) {
+    .categories {
+        gap: 10px !important;
+    }
+
+    .routes-cards {
+        column-gap: 55px !important;
+    }
+
+    .categories>a {
+        width: 100px !important;
+        height: 100px !important;
+        border-radius: 40px !important;
+    }
+}
+
+@media (max-width: 370px) {
+    .top-images>a>* {
+        width: 90px;
+        height: 90px;
+    }
+
+    .top-places {
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+    }
+
+    .select-page {
+        display: none;
+    }
+
+    .select-page-menu {
+        display: block !important;
+    }
 }
