@@ -1,0 +1,66 @@
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+#header-description {
+    margin-top: -15px;
+    margin-bottom: 30px;
+}
+
+.action {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    left: 102px;
+}
+
+.action-name {
+    align-self: start;
+    font-size: larger;
+    margin-bottom: 7px;
+}
+
+.input-area {
+    display: flex;
+    flex-direction: row;
+}
+
+.tooltip-text {
+    position: relative;
+    margin-bottom: -100%;
+    opacity: 0;
+    background-color: #000000b7;
+    color: white;
+    padding: 7px;
+    border-radius: 30px;
+    /* top: 10px; */
+    left: 5px;
+    width: 200px;
+    height: 100%;
+    transition: all .2s linear;
+}
+
+.input-area>button {
+    background-color: white;
+    border: none;
+    width: 25px;
+    height: 25px;
+}
+
+.input-area>button>img {
+    width: 25px;
+    height: 25px;
+}
+
+.input-area>button:hover+.tooltip-text {
+    opacity: 1;
+}
+
+input {
+    width: 400px;
+    padding: 5px;
+    border: 1px solid #001AFF;
+    border-radius: 66px;
+    opacity: 0.6;
+}

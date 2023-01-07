@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <link rel="stylesheet" href="../main_style.css">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="form_style.css">
     </head>
 
     <body>
@@ -27,52 +27,25 @@
                 <img src="https://img.icons8.com/ios-filled/25/null/menu-rounded.png" />
             </button>
 
-            <!-- <div class="select-page-menu" style="display: none;">
-
-                <div id="select-page-menu-actions" style="display: none;">
-                    <button id="close-menu-btn">
-                        <img src="https://img.icons8.com/fluency-systems-regular/15/null/cancel.png" align="right" />
-                    </button>
-
-                    <p><a href="">Личный кабинет</a></p>
-                    <p><a href="">Меню</a></p>
-                </div>
-            </div> -->
-
         </nav>
 
         <div class="container">
-            <p style="font-size: 30px;"> Личный кабинет </p>
-
-            <div class="user-info">
-                <div class="left">
-                    <img src="../sources/images/default_user_img.png" alt="" class="user-image">
-                    <a href="" class="send-message">Написать</a>
-                </div>
-
-                <div class="right">
-                    <p class="name-and-age"> Иван Иванов Иванович, 17 лет </p>
-                    <p class="city"> Москва, Московская область </p>
-                    <p class="description"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ducimus,
-                        omnis quisquam provident officiis impedit numquam laudantium culpa molestias perferendis, quasi
-                        nulla eum recusandae ipsam vero similique iusto voluptatem ex. </p>
-                    <p class="travel-exp">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores explicabo
-                        aut, unde nisi ab accusantium ipsam ratione esse, laboriosam quaerat velit quisquam recusandae
-                        iure eaque vel. Inventore incidunt assumenda magnam.</p>
-
-                    <div class="actions">
-                        <div class="category">
-                            <img src="../sources/images/like.png" alt="">
-                            <span> Сохраненные места </span>
-                        </div>
-
-                        <div class="category">
-                            <img src="../sources/images/like_star.png" alt="">
-                            <span> Сохраненные маршруты </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <form action="">
+                <input type="text" id="input1" placeholder="input1">
+                <input type="text" id="input2" placeholder="input2">
+                <input type="text" id="input3" placeholder="input3">
+                <input type="password" id="password1" placeholder="pw1">
+                <input type="password" id="password2" placeholder="pw2">
+                <p>
+                    <input type="checkbox" id="checkbox1">
+                    <label for="checkbox1" id="checkbox1-label">Я соглашаюсь на обработку личных данных</label>
+                </p>
+                <p>
+                    <input type="checkbox" id="checkbox2">
+                    <label for="checkbox2" id="checkbox2-label">Соглашаюсь с политикой конфидециальности</label>
+                </p>
+                <button type="submit"> Продолжить </button>
+            </form>
         </div>
 
         <footer style="margin-top: 40px;">

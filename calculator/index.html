@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Калькулятор бюджета</title>
         <link rel="stylesheet" href="../main_style.css">
         <link rel="stylesheet" href="style.css">
     </head>
@@ -28,6 +28,9 @@
             </button>
 
             <!-- <div class="select-page-menu" style="display: none;">
+                <button id="open-select-page" value="closed">
+                    <img src="https://img.icons8.com/ios-filled/25/null/menu-rounded.png" />
+                </button>
 
                 <div id="select-page-menu-actions" style="display: none;">
                     <button id="close-menu-btn">
@@ -42,37 +45,46 @@
         </nav>
 
         <div class="container">
-            <p style="font-size: 30px;"> Личный кабинет </p>
+            <div class="header">
+                <p style="font-size: 30px;"> Калькулятор бюджета </p>
+                <p id="header-description"> Рассчитай необходимый бюджет для поездки </p>
+            </div>
 
-            <div class="user-info">
-                <div class="left">
-                    <img src="../sources/images/default_user_img.png" alt="" class="user-image">
-                    <a href="" class="send-message">Написать</a>
-                </div>
-
-                <div class="right">
-                    <p class="name-and-age"> Иван Иванов Иванович, 17 лет </p>
-                    <p class="city"> Москва, Московская область </p>
-                    <p class="description"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ducimus,
-                        omnis quisquam provident officiis impedit numquam laudantium culpa molestias perferendis, quasi
-                        nulla eum recusandae ipsam vero similique iusto voluptatem ex. </p>
-                    <p class="travel-exp">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores explicabo
-                        aut, unde nisi ab accusantium ipsam ratione esse, laboriosam quaerat velit quisquam recusandae
-                        iure eaque vel. Inventore incidunt assumenda magnam.</p>
-
-                    <div class="actions">
-                        <div class="category">
-                            <img src="../sources/images/like.png" alt="">
-                            <span> Сохраненные места </span>
-                        </div>
-
-                        <div class="category">
-                            <img src="../sources/images/like_star.png" alt="">
-                            <span> Сохраненные маршруты </span>
-                        </div>
+            <form action="">
+                <div class="action">
+                    <p class="action-name" id="action1-name">action1</p>
+                    <div class="input-area">
+                        <input type="text" class="text" pattern="^\d+$">
+                        <button>
+                            <img src="../sources/images/tooltip_icon.png" alt="Подсказка" class="tooltip">
+                        </button>
+                        <span class="tooltip-text">Стоимость указывается с расчетом одного полного дня, т.е. 24 часа с
+                            момента заезда</span>
                     </div>
                 </div>
-            </div>
+
+                <div class="action">
+                    <p class="action-name">action2</p>
+                    <div class="input-area">
+                        <input type="text" class="text" pattern="^\d+$">
+                        <button>
+                            <img src="../sources/images/tooltip_icon.png" alt="Подсказка" class="tooltip">
+                        </button>
+                        <span class="tooltip-text">action2</span>
+                    </div>
+                </div>
+
+                <div class="action">
+                    <p class="action-name">action3</p>
+                    <div class="input-area">
+                        <input type="text" class="text" pattern="^\d+$" placeholder="Введите число">
+                        <button>
+                            <img src="../sources/images/tooltip_icon.png" alt="Подсказка" class="tooltip">
+                        </button>
+                        <span class="tooltip-text">action3</span>
+                    </div>
+                </div>
+            </form>
         </div>
 
         <footer style="margin-top: 40px;">

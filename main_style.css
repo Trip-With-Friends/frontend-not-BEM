@@ -51,32 +51,8 @@ nav {
     border-bottom: 1px solid #001AFF;
 }
 
-#select-page-menu-actions {
-    position: absolute;
-    display: flex !important;
-    flex-direction: column;
-    left: 50px;
-    right: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    z-index: 1;
-
-    border: 1px solid #001AFF;
-    border-radius: 30px;
-    background-color: #ffffff;
-}
-
-#select-page-menu-actions>:first-child {
-    position: relative;
-    align-self: flex-end;
-    right: 10px;
-    top: 9px;
-    background-color: white;
-    border: none;
-
-}
-
 #open-select-page {
+    display: none;
     background-color: white;
     border: none;
 }
@@ -106,6 +82,7 @@ nav {
     line-height: 39px;
 
     color: #001AFF;
+    transition: all .2s linear;
 }
 
 .select-page>*,
@@ -184,5 +161,9 @@ footer {
 
     .select-page-menu {
         display: block !important;
+    }
+
+    #open-select-page {
+        display: block;
     }
 }
